@@ -1,0 +1,94 @@
+.hero {
+    display: block;
+    position: absolute;
+    bottom: 0;
+    height: 70px;
+    z-index: 10;
+    opacity: 1;
+}
+
+.main__hero2 {
+    right: 0;
+}
+
+.main__portal, .main__bomb {
+    position: absolute;
+    height: 20%;
+}
+
+.main__fruit {
+    position: absolute;
+    height: 15%;
+}
+
+.winner {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    align-content: center;
+
+    margin: auto;
+    top: 10vh;
+    position: fixed;
+    align-self: center;
+
+    border: none;
+    border-radius: 20px;
+    box-shadow: 3px 3px 7px cornflowerblue;
+    width: 50vw;
+    height: 80vh;
+
+    background-image: url("../images/fierwork.gif");
+    background-repeat: no-repeat;
+    background-size: cover;
+    z-index: 100;
+}
+
+.winner__header {
+    font-size: 5em;
+    font-family: "Allegretto Script Two", sans-serif, cursive;
+    font-weight: bold;
+    text-shadow: 4px 4px 8px yellow, 10px 10px 8px white;
+
+    color: #1285E2;
+}
+
+.winner__btn {
+    width: 20%;
+    height: 10%;
+
+    border: 0 solid white;
+    border-radius: 10px;
+
+    color: yellow;
+    background-color: #1285E2;
+
+    font-weight: bolder;
+    font-family: "Times New Roman", sans-serif;
+    font-size: 1.05em;
+
+    cursor: pointer;
+    box-shadow: 2px 2px 3px yellow;
+    z-index: 100;
+}
+
+.winner__btn:hover {
+    color: #1285E2;
+    background-color: yellow;
+    box-shadow: -2px -2px 3px darkblue;
+}
+
+.winner__name {
+    font-size: 10em;
+    font-family: "Art Nouveau-Bistro", sans-serif;
+    color: yellow;
+    text-shadow: 4px 4px 8px #1285E2, 7px 7px 8px white;
+}
+
+#confetti {
+    position: fixed;
+    z-index: 2;
+    width: 100%;
+    height: 100%;
+}

@@ -1,0 +1,145 @@
+/* standard styles */
+html {
+    box-sizing: border-box;
+    font-size: 16px;
+}
+
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+
+body, h1, h2, h3, h4, h5, h6, p, ol, ul {
+    margin: 0;
+    padding: 0;
+    font-weight: normal;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* given styles */
+body {
+    background: linear-gradient(to right, rgba(0, 170, 255, 0.56), rgba(0, 255, 108, 0.66));
+    display: flex;
+    flex-flow: column;
+    height: 100%;
+    user-select: none;
+    position: relative;
+}
+
+.header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+    margin: 1%;
+    padding: .5%;
+
+    border-radius: 10px;
+    border: 3px solid white;
+
+    font-weight: bolder;
+}
+
+/* Style the rainbow text element. */
+.article {
+    font-size: 40px;
+    font-family: fantasy;
+    letter-spacing: 2px;
+
+    background: #CA4246;
+    background: conic-gradient(
+            #CA4246 16.666%,
+            #E16541 16.666%,
+            #E16541 33.333%,
+            #F18F43 33.333%,
+            #F18F43 50%,
+            #8B9862 50%,
+            #8B9862 66.666%,
+            #476098 66.666%,
+            #476098 83.333%,
+            #A7489B 83.333%);
+
+    background-size: 57%;
+    background-repeat: repeat;
+
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+
+    animation: rainbow-text-animation-rev 0.5s ease forwards;
+    cursor: pointer;
+}
+
+/* Add animation on hover. */
+.article:hover {
+    animation: rainbow-text-animation 0.5s ease forwards;
+}
+
+/* Move the background and make it larger. */
+/* Animation shown when hovering over the text. */
+@keyframes rainbow-text-animation {
+    0% {
+        background-size: 57%;
+        background-position: 0 0;
+    }
+    20% {
+        background-size: 57%;
+        background-position: 0 1em;
+    }
+    100% {
+        background-size: 300%;
+        background-position: -9em 1em;
+    }
+}
+
+/* Move the background and make it smaller. */
+/* Animation shown when entering the page and after the hover animation. */
+@keyframes rainbow-text-animation-rev {
+    0% {
+        background-size: 300%;
+        background-position: -9em 1em;
+    }
+    20% {
+        background-size: 57%;
+        background-position: 0 1em;
+    }
+    100% {
+        background-size: 57%;
+        background-position: 0 0;
+    }
+}
+
+.name-box1, .name-box2 {
+    border: 1px solid white;
+    display: flex;
+    flex-direction: row;
+    align-self: center;
+    justify-content: space-between;
+    width: 10%;
+    padding: 0.5%;
+    font-size: 1.4em;
+    color: navy;
+    border-radius: 10px;
+    text-shadow: 1px 1px 1px darkgrey;
+    overflow: hidden;
+}
+
+.name-box1 {
+    background-color: yellow;
+}
+
+.name-box2 {
+    background-color: red;
+}
+
+.score-1, .score-2 {
+    justify-items: center;
+    justify-content: center;
+    justify-self: center;
+    text-align: center;
+    align-content: center;
+    align-items: center;
+    text-align-all: center;
+}

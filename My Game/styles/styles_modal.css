@@ -1,0 +1,62 @@
+.modal-players-apply{
+    margin: 1% auto;
+    padding: 20px;
+
+    background-color: #242832;
+    color: orangered;
+    font-family: sans-serif;
+    text-align: center;
+    box-shadow: 4px 4px 3px white;
+
+    max-width: 30%;
+    border-radius: 10px;
+    position: relative;
+}
+
+.form__header {
+    font-size: 20px;
+}
+.loading {
+    width: 50%;
+}
+
+.form__paragraph {
+    color: #ffffff;
+    font-style: italic;
+    margin: 10px;
+}
+
+.input__form {
+    display: inline-block;
+
+    margin: 5px;
+    padding: 2px;
+
+    border: 2px solid mediumaquamarine;
+    border-radius: 10px;
+    font-size: 20px;
+    font-family: "Agency FB", sans-serif;
+}
+
+.input__form:hover {
+    border: 2px solid aquamarine;
+    box-shadow: 3px 3px 3px aqua;
+}
+
+.modal-players-apply button[type="submit"] {
+    background-color: orangered;
+    color: #242832;
+    width: 100%;
+    padding: 10px;
+    font-size: 14px;
+    font-weight: 700;
+    text-transform: uppercase;
+    border-radius: 99px;
+    border: 0;
+    margin-top: 25px;
+    cursor: pointer;
+}
+
+.modal-players-apply button[type="submit"]:hover {
+    background-color: mediumaquamarine;
+}

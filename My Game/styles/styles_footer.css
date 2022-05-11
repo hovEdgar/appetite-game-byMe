@@ -1,0 +1,19 @@
+.footer {
+    margin: 0 1%;
+    border: 2px solid white;
+    border-radius: 10px;
+    background: linear-gradient(to left, rgba(0, 170, 255, 0.56), rgba(0, 255, 108, 0.66));
+);
+    padding: 0.5em;
+    width: 98%;
+    font-size: 14px;
+    text-align: center;
+}
+
+.developer {
+    color: #242832;
+    font-size: 16px;
+    font-weight: bolder;
+    text-decoration: none;
+    font-family: "Agency FB", sans-serif;
+}
