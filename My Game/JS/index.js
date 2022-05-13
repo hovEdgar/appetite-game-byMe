@@ -136,9 +136,8 @@ class Player {
     }
 
     playerLost() {
-        this.elem.style.opacity = "0.5";
         let interval = setInterval(() => {
-            this.elem.classList.toggle("visible");
+            this.elem.style.opacity = "0.5";
         }, 100);
         setTimeout(() => {
             clearInterval(interval);

@@ -92,7 +92,3 @@
     width: 100%;
     height: 100%;
 }
-/* an extra style using during game */
-.visible {
-    visibility: hidden;
-}
