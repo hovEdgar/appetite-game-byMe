@@ -138,11 +138,7 @@ class Player {
     playerLost() {
         this.elem.style.opacity = "0.5";
         let interval = setInterval(() => {
-            if(this.elem.style["visibility"]==="hidden"){
-                this.elem.style["visibility"]="visible";
-            } else {
-                this.elem.style["visibility"]="hidden";
-            }
+            this.elem.classList.toggle("visible");
         }, 100);
         setTimeout(() => {
             clearInterval(interval);
@@ -273,9 +269,11 @@ function moveHeroes(event) {
 
     if (keysPressed["w"]) { // move player 1
         player1.bottom += player1.speed;
+        player1.degree = -90;
     }
     if (keysPressed["s"]) {
         player1.bottom -= player1.speed;
+        player1.degree = 90;
     }
     if (keysPressed["a"]) {
         player1.left -= player1.speed;
@@ -287,11 +285,11 @@ function moveHeroes(event) {
     }
     if (keysPressed["ArrowUp"]) {   // move player 2
         player2.bottom += 10;
-        player2.degree = 0;
+        player2.degree = 90;
     }
     if (keysPressed["ArrowDown"]) {
         player2.bottom -= player2.speed;
-        player2.degree = 0;
+        player2.degree = -90;
     }
     if (keysPressed["ArrowLeft"]) {
         player2.right += player2.speed;
